@@ -11,5 +11,10 @@ namespace BasePageSample
         {
             InitializeComponent();
         }
+
+        public void Handle_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PopAsync();
+        }
     }
 }
