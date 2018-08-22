@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage NavigationPage.HasNavigationBar="false" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BasePageSample.BaseContentPage">
+    <ContentPage.Content>
+        <Grid x:Name="RootGrid" RowSpacing="0" ColumnSpacing="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition x:Name="MenuRow" Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition x:Name="MainMenuRow" Height="Auto" />
+            </Grid.RowDefinitions>
+            
+             <Grid x:Name="BaseContentGrid" BackgroundColor="Red" RowSpacing="0" ColumnSpacing="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="1">
+                <!--This is the placeholder where actual content will be loaded into...-->
+            </Grid>
+            
+            <Grid x:Name="BaseHeaderGrid" BackgroundColor="Orange" ColumnSpacing="0" HeightRequest="56" Grid.Row="0">
+               <!--This is the header for each page...-->
+            </Grid>
+
+            <Grid x:Name="MainMenuContainer" BackgroundColor="Orchid" RowSpacing="0" ColumnSpacing="0" HeightRequest="60" VerticalOptions="End" Grid.Row="2">
+                <!--This is the tab menu container for each page...-->
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
